@@ -1,13 +1,8 @@
 #include <iostream>
-#include <format>
 
-namespace mycode {
-    void foo() {
-        std::cout << "foo() called in the mycode namespace" << std::endl;
-    }
-}
+using namespace std;
 
 int main() {
-    mycode::foo();
+    cout << "Hello World!!" << endl;
     return 0;
 }
