@@ -3,17 +3,15 @@
 using namespace std;
 
 int main() {
-    double a = 1.0;
-    cout << "int:\n" << endl;
-    cout << "Max: " << numeric_limits<int>::max() << endl;
-    cout << "Mim: " << numeric_limits<int>::min() << endl;
-    cout << "Lowest" << numeric_limits<int>::lowest() << endl;
+    float myFloat {3.14f};
+    int i1 {(int)myFloat};
+    int i2 {int(myFloat)};
+    // 3번쨰가 권장하는 방식
+    int i3 {static_cast<int>(myFloat)};
 
-    cout << "\ndouble \n" << endl;
-    cout << "Max: " << numeric_limits<double>::max() << endl;
-    cout << "Mim: " << numeric_limits<double>::min() << endl;
-    cout << "Lowest" << numeric_limits<double>::lowest() << endl;
-
-
+    cout << myFloat << endl;
+    cout << i1 << endl;
+    cout << i2 << endl;
+    cout << i3 << endl;
     return 0;
 }
