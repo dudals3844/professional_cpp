@@ -12,9 +12,9 @@ namespace First {
     }
 }
 
+namespace FST = First::Second;
+
 int main() {
-    cout << First::num << endl;
-    cout << First::Second::num << endl;
-    cout << First::Second::Third::num << endl;
+    cout << FST::num << endl;
     return 0;
 }
