@@ -3,4 +3,4 @@ project(professional_cpp_)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(professional_cpp_ main.cpp)
+add_executable(professional_cpp_ main.cpp employee.h)
