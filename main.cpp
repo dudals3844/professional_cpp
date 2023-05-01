@@ -3,15 +3,25 @@
 using namespace std;
 
 int main() {
-    float myFloat {3.14f};
-    int i1 {(int)myFloat};
-    int i2 {int(myFloat)};
-    // 3번쨰가 권장하는 방식
-    int i3 {static_cast<int>(myFloat)};
+    int i {12};
+    int someInteger{256};
+    short someShort;
+    long someLong;
+    float someFloat;
+    double someDouble;
 
-    cout << myFloat << endl;
-    cout << i1 << endl;
-    cout << i2 << endl;
-    cout << i3 << endl;
+    cout << someInteger << endl;
+    someInteger++;
+    cout << someInteger << endl;
+    someInteger *= 2;
+    cout << someInteger << endl;
+    someShort = static_cast<short>(someInteger);
+    cout << someShort << endl;
+    someFloat = someLong + 0.785f;
+    cout << someFloat << endl;
+    someDouble = static_cast<double>(someFloat) / 100000;
+    cout << someDouble << endl;
+
+    cout << i << endl;
     return 0;
 }
