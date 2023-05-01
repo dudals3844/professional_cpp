@@ -3,25 +3,17 @@
 using namespace std;
 
 int main() {
-    int i {12};
-    int someInteger{256};
-    short someShort;
-    long someLong;
-    float someFloat;
-    double someDouble;
+    const int PieceTypeKing {0};
+    const int PieceTypeQueen {1};
+    const int PieceTypeRook {2};
+    const int PieceTypePawn {3};
 
-    cout << someInteger << endl;
-    someInteger++;
-    cout << someInteger << endl;
-    someInteger *= 2;
-    cout << someInteger << endl;
-    someShort = static_cast<short>(someInteger);
-    cout << someShort << endl;
-    someFloat = someLong + 0.785f;
-    cout << someFloat << endl;
-    someDouble = static_cast<double>(someFloat) / 100000;
-    cout << someDouble << endl;
+    int myPiece {PieceTypeKing};
 
-    cout << i << endl;
+    cout << PieceTypeRook << endl;
+//    상수는 변경 불가능
+//    PieceTypeRook = 3;
+
+
     return 0;
 }
