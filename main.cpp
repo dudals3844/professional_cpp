@@ -3,10 +3,15 @@
 using namespace std;
 
 int main() {
-    int i{3};
+    int i{1};
 
-    cout << ((i > 2) ? "yes" : "no") << endl;
-    cout << (i > 2 ? "yes" : "no");
+    if (i > 3) {
+        cout << "i > 3" << endl;
+    } else if(i >2){
+        cout << "i > 2" << endl;
+    } else{
+        cout << "hello";
+    }
     return 0;
 }
 
